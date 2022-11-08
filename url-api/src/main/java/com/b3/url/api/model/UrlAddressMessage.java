@@ -1,8 +1,9 @@
 package com.b3.url.api.model;
 
-import lombok.*;
-
-import java.util.Date;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
 @ToString
 @Builder
@@ -11,6 +12,5 @@ import java.util.Date;
 public class UrlAddressMessage {
 
     private String url;
-    private Date createdDate;
 
 }

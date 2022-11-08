@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    continue-on-error: true
+    driverClassName: org.postgresql.Driver
+    initialization-mode: never
+    password: passwd
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/poker
+    username: admin
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
